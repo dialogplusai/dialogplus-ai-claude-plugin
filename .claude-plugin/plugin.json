@@ -1,0 +1,20 @@
+{
+  "name": "dialogplus-ai",
+  "displayName": "DialogPlus AI",
+  "version": "1.0.0",
+  "description": "Work with your DialogPlus AI WhatsApp Business workspace in Claude: see whether messages were delivered and why some failed, catch up on the inbox, look up contacts and templates, and send WhatsApp updates through your events after previewing each one.",
+  "author": {
+    "name": "DialogPlus AI",
+    "email": "support@dialogplus.ai",
+    "url": "https://dialogplus.ai"
+  },
+  "homepage": "https://dialogplus.ai",
+  "repository": "https://github.com/dialogplusai/dialogplus-ai-claude-plugin",
+  "license": "MIT",
+  "keywords": ["whatsapp", "whatsapp-business", "customer-messaging", "notifications", "crm"],
+  "icon": "./assets/icon.png",
+  "documentationUrl": "https://app.dialogplus.ai/#/docs/mcp",
+  "supportUrl": "https://app.dialogplus.ai/#/docs",
+  "privacyPolicyUrl": "https://app.dialogplus.ai/#/legal/privacy",
+  "termsOfServiceUrl": "https://app.dialogplus.ai/#/legal/terms"
+}

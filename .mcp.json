@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "dialogplus-ai": {
+      "type": "http",
+      "url": "https://api.dialogplus.ai/mcp"
+    }
+  }
+}
