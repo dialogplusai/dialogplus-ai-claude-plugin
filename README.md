@@ -1,6 +1,6 @@
 # DialogPlus AI for Claude
 
-[DialogPlus AI](https://dialogplus.ai) is a WhatsApp Business platform. This plugin connects Claude to your DialogPlus AI workspace so you can run it from the chat: catch up on and reply to the inbox, manage contacts, run campaigns, submit templates, send updates through your events, pause anything that's sending, and check what reached your customers and why some messages failed. Anything a customer receives is shown with its price before it's sent.
+[DialogPlus AI](https://dialogplus.ai) is a WhatsApp Business platform. This plugin connects Claude to your DialogPlus AI workspace so you can run it from the chat: catch up on and reply to the inbox, manage contacts, run campaigns, build chatbot journeys, submit templates, send updates through your events, pause anything that's sending, and check what reached your customers and why some messages failed. Anything a customer receives is shown with its price before it's sent.
 
 ## What's included
 
@@ -16,9 +16,11 @@
   - `create_contact`, `update_contact`, `tag_contacts`, `opt_out_contact`: add, edit and tag contacts, and stop marketing to someone who asked
   - `list_campaigns`, `get_campaign`, `create_campaign_draft`, `preview_campaign_send`, `send_campaign`, `set_campaign_status`, `cancel_campaign`: broadcast campaigns, from draft to results
   - `submit_template`: write a WhatsApp template and submit it for approval (previewed first)
-  - `list_journeys`, `set_journey_status`: chatbot journeys, and pausing or resuming one
+  - `list_journeys`, `get_journey`, `get_journey_guide`: chatbot journeys, their steps, and how to build one
+  - `create_journey`, `edit_journey`: build a journey from your description or a starter template, and change it (drafts only)
+  - `preview_journey_publish`, `publish_journey`, `set_journey_status`: see what would go live, publish it, pause or resume
   - `list_event_triggers`, `set_event_status`, `set_trigger_status`, `retry_event_delivery`: pause events and their sources, and resend failed messages
-- **Skills** that help Claude use them well: sending an update, replying to customers, running a campaign, managing contacts, submitting a template, stopping messages quickly, checking delivery and failures, catching up on the inbox, and a workspace report.
+- **Skills** that help Claude use them well: sending an update, replying to customers, running a campaign, building a chatbot journey, managing contacts, submitting a template, stopping messages quickly, checking delivery and failures, catching up on the inbox, and a workspace report.
 - **Commands** in Claude Code and Cowork: `/dialogplus-ai:status` and `/dialogplus-ai:failed-messages`.
 
 ## Before you start
@@ -50,7 +52,7 @@ Then run `/mcp` and sign in to **dialogplus-ai**.
 ## What Claude can and can't do
 
 - Claude acts as you, with the permissions you tick on the sign-in screen and never more than your DialogPlus AI role allows. Each area (inbox, contacts, campaigns, events, templates, journeys) has separate permissions for reading, changing and sending, so you can allow reading only.
-- Anything a customer receives is previewed first: the exact message, who it goes to and the price. Claude asks before every send. A campaign needs a confirmation code from its preview, valid for 15 minutes, and is refused if the audience or cost grew since.
+- Anything a customer receives is previewed first: the exact message, who it goes to and the price. Claude asks before every send. A campaign needs a confirmation code from its preview, valid for 15 minutes, and is refused if the audience or cost grew since. A chatbot journey is built as a draft that reaches no one, and goes live only with the confirmation code from a preview of that same draft.
 - Nothing deletes contacts, conversations, templates or journeys, and nothing opts a customer in to marketing: consent only comes from the customer.
 - Each tool has its own rate limit, and bulk tagging is capped at 50 contacts at a time.
 - Every tool Claude uses is recorded in your workspace's audit log.

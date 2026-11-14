@@ -14,6 +14,6 @@ Find what is sending, pause it, and confirm it stopped. Pausing is safe and can 
    - A campaign: `list_campaigns`, then `set_campaign_status` with `pause`.
    - A chatbot journey: `list_journeys`, then `set_journey_status` with `pause`. Customers stop getting that journey.
 3. **Check it stopped:** `list_event_deliveries` again, or `get_campaign`.
-4. **Turn it back on** only when the person says the problem is fixed: the same tool with `active` or `resume`. Resuming a journey publishes it again after its checks.
+4. **Turn it back on** only when the person says the problem is fixed: the same tool with `active` or `resume`. Resuming a journey puts back exactly the version that was live; if it was changed meanwhile, follow the build-a-journey skill to preview and publish the change.
 
 Failed messages can be sent again with `retry_event_delivery` (it previews first, and each retry is charged like a new message).
