@@ -19,6 +19,21 @@
 - A DialogPlus AI account and a workspace with a WhatsApp number connected.
 - To send messages: an event set up with an approved WhatsApp template, and wallet balance.
 
+## Install in Claude Code
+
+```
+/plugin install dialogplus-ai --marketplace dialogplusai/dialogplus-ai-claude-plugin
+```
+
+On Claude Code before 2.1.275, add the marketplace first:
+
+```
+/plugin marketplace add dialogplusai/dialogplus-ai-claude-plugin
+/plugin install dialogplus-ai@dialogplus-ai
+```
+
+Then run `/mcp` and sign in to **dialogplus-ai**.
+
 ## Connect
 
 1. Install the plugin, open its **Connectors** tab and connect **DialogPlus AI**.
