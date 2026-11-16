@@ -7,14 +7,14 @@
   },
   "metadata": {
     "description": "The DialogPlus AI plugin for Claude: your WhatsApp Business workspace in Claude.",
-    "version": "1.2.0"
+    "version": "1.3.0"
   },
   "plugins": [
     {
       "name": "dialogplus-ai",
       "source": "./",
-      "description": "Run your DialogPlus AI WhatsApp Business workspace from Claude: catch up on and reply to the inbox, manage contacts, run campaigns, build chatbot journeys, submit templates, send updates through your events, pause anything that's sending, and see what was delivered and why some failed. Anything a customer receives is previewed with its price first.",
-      "version": "1.2.0",
+      "description": "Run your DialogPlus AI WhatsApp Business workspace from Claude: catch up on and reply to the inbox, manage contacts, run campaigns, build chatbot journeys, look things up in your data tables, submit templates, send updates through your events, pause anything that's sending, and see what was delivered and why some failed. Anything a customer receives is previewed with its price first.",
+      "version": "1.3.0",
       "author": {
         "name": "DialogPlus AI",
         "email": "support@dialogplus.ai"
